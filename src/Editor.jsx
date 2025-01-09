@@ -15,8 +15,9 @@ function Editor(props) {
     function handleChange(editor,data,value){
         onChange(value)
     }
+  
   return (
-    
+    <>
         <div className='editor-container'>
         <div className=' editor-title'>
            {displayName}
@@ -31,11 +32,12 @@ function Editor(props) {
             lint:true,
             mode:language,
             theme:'material',
-            lineNumbers:true
+            lineNumbers:true,
+            
         }}
         />
         </div>
-        
+        </>
     
   )
 }
